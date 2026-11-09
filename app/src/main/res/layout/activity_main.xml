@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#F7F5FA" android:fillViewport="true">
+ <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="24dp">
+  <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Animated Profiles" android:textColor="#211A2B" android:textSize="28sp" android:textStyle="bold"/>
+  <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="Perfiles animados, compartidos por archivos y guardados en tu móvil." android:textColor="#625B71" android:textSize="15sp"/>
+  <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:hint="Nombre del perfil">
+   <com.google.android.material.textfield.TextInputEditText android:id="@+id/nameInput" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true"/>
+  </com.google.android.material.textfield.TextInputLayout>
+  <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:hint="Teléfono (con prefijo, opcional)">
+   <com.google.android.material.textfield.TextInputEditText android:id="@+id/phoneInput" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="phone" android:singleLine="true"/>
+  </com.google.android.material.textfield.TextInputLayout>
+  <com.google.android.material.button.MaterialButton android:id="@+id/selectVideoButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:text="Seleccionar vídeo o GIF"/>
+  <TextView android:id="@+id/selectedVideoText" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Ningún archivo seleccionado" android:textColor="#625B71" android:padding="8dp"/>
+  <com.google.android.material.button.MaterialButton android:id="@+id/exportButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Exportar perfil .wprofile"/>
+  <com.google.android.material.button.MaterialButton android:id="@+id/importButton" style="@style/Widget.MaterialComponents.Button.OutlinedButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Importar perfil .wprofile"/>
+  <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:text="Perfiles guardados" android:textColor="#211A2B" android:textSize="20sp" android:textStyle="bold"/>
+  <LinearLayout android:id="@+id/profilesContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:orientation="vertical"/>
+  <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:text="Nota: los perfiles se reproducen dentro de esta aplicación. WhatsApp no ofrece una API pública para usar GIF o vídeo como avatar." android:textColor="#8A5260" android:textSize="13sp"/>
+ </LinearLayout>
+</ScrollView>
